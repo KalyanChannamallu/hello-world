@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.basf.newtp.services.impl.AjaxCallsServiceImpl">
+        <implementation class="com.basf.newtp.services.impl.AjaxCallsServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.basf.newtp.services.api.AjaxCallsService"/>
+        </service>
+        <property name="service.pid" value="com.aosmith.portal.orderquote.util.AjaxCallsServiceImpl"/>
+        <property name="service.description" value="AOS AjaxCallsServiceImpl"/>
+        <property name="service.vendor" value="AO Smith"/>
+        <reference name="getServiceConnection" interface="com.basf.newtp.services.api.GetServiceConnection" cardinality="1..1" policy="static" bind="bindGetServiceConnection" unbind="unbindGetServiceConnection"/>
+    </scr:component>
+</components>
