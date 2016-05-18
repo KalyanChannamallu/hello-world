@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="com.aos.portal.AOSPortal.HybrisServiceProperties">
+        <implementation class="com.basf.newtp.utils.HybrisServiceProperties"/>
+        <service servicefactory="false">
+            <provide interface="com.basf.newtp.utils.HybrisServiceProperties"/>
+        </service>
+        <property name="service.description" value="AOS HybrisServicesProperties Configuration"/>
+        <property name="service.vendor" value="AO Smith"/>
+        <property name="HYBRIS_SERVER" value="http://172.20.105.29:9001"/>
+        <property name="HYBRIS_PARTSLOOKUP_ENDPOINT" value="rest/v1/HotWaterSiteUID/products?"/>
+        <property name="HYBRIS_GETCATEGORIES_ENDPOINT" value="rest/v1/HotWaterSiteUID/catalogs/HotWaterProductCatalog/Online/categories/001?options=SUBCATEGORIES"/>
+        <property name="HYBRIS_GETPRODUCTATTRIBUTES_ENDPOINT" value="rest/v1/HotWaterSiteUID/products?"/>
+        <property name="service.pid" value="com.aos.portal.AOSPortal.HybrisServiceProperties"/>
+    </scr:component>
+</components>

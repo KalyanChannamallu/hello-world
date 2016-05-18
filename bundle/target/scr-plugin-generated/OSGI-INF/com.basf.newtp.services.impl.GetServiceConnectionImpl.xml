@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.basf.newtp.services.impl.GetServiceConnectionImpl">
+        <implementation class="com.basf.newtp.services.impl.GetServiceConnectionImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.basf.newtp.services.api.GetServiceConnection"/>
+        </service>
+        <property name="service.pid" value="com.aosmith.portal.orderquote.util.GetServiceConnectionImpl"/>
+        <property name="service.description" value="AOS GetServiceConnectionImpl"/>
+        <property name="service.vendor" value="AO Smith"/>
+    </scr:component>
+</components>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="com.aos.portal.AOSPortal.CastIronServiceProperties">
+        <implementation class="com.basf.newtp.utils.CastIronServiceProperties"/>
+        <service servicefactory="false">
+            <provide interface="com.basf.newtp.utils.CastIronServiceProperties"/>
+        </service>
+        <property name="service.description" value="AOS CastIronServiceProperties Configuration"/>
+        <property name="service.vendor" value="AO Smith"/>
+        <property name="CASTIRON_SERVER" value="http://172.20.105.203"/>
+        <property name="CASTIRON_CUSTOMERLOOKUP_ENDPOINT" value="customersearch"/>
+        <property name="CASTIRON_GETCONTRACTPRICE_ENDPOINT" value="GetContractPrice"/>
+        <property name="CASTIRON_SUBMITORDER_ENDPOINT" value="createorder"/>
+        <property name="CASTIRON_SUBMITQUOTE_ENDPOINT" value="createquote"/>
+        <property name="CASTIRON_SAVEORDER_ENDPOINT" value="saveorder"/>
+        <property name="CASTIRON_SAVEQUOTE_ENDPOINT" value="savequote"/>
+        <property name="CASTIRON_CANCELORDER_ENDPOINT" value="cancelorder"/>
+        <property name="CASTIRON_MYORDERS_ENDPOINT" value="orderheader"/>
+        <property name="CASTIRON_MYQUOTES_ENDPOINT" value="quoteheader"/>
+        <property name="CASTIRON_ORDERDETAILS_ENDPOINT" value="orderdetails"/>
+        <property name="CASTIRON_QUOTEDETAILS_ENDPOINT" value="quotedetails"/>
+        <property name="service.pid" value="com.aos.portal.AOSPortal.CastIronServiceProperties"/>
+    </scr:component>
+</components>
