@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1463469828173
+Bnd-LastModified: 1463645671427
 Build-Jdk: 1.7.0_80
 Built-By: Kalyan.Channamallu
 Bundle-Category: basfnewtp
