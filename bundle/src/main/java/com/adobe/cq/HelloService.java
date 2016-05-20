@@ -6,7 +6,7 @@ package com.adobe.cq;
 public interface HelloService {
     
     /**
-     * @return the name of the underlying JCR repository  implementation
+     * @return the name of the underlying JCR repository  implementation -int
      */
     public String getRepositoryName();
 
